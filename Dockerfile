@@ -6,7 +6,7 @@ EXPOSE 3000
 
 RUN mkdir /app
 
-ADD dateservice /app/
+ADD dist/dateservice /app/
 ADD start.sh /app/
 
 RUN chmod +x /app/start.sh

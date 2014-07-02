@@ -4,7 +4,9 @@ timestamp=`date +%Y%m%d_%H%M%S`
 image_name="dateservice"
 container_name="ds"
 
-go build .
+
+bash build.sh
+
 
 echo -e ">> Removing previous container and image"
 sudo docker rm $container_name

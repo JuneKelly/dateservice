@@ -7,9 +7,7 @@ EXPOSE 3000
 RUN mkdir /app
 
 ADD dist/dateservice /app/
-ADD start.sh /app/
 
-RUN chmod +x /app/start.sh
 RUN chmod +x /app/dateservice
 
-CMD ["/app/start.sh"]
+CMD ["/app/dateservice"]

@@ -1,10 +1,5 @@
 #! /usr/bin/env bash
 
-# run this task with: $ manuel hello
-function hello {
-  echo ">> Hello from manuel!"
-}
-
 function build {
   binary_name="dateservice"
 
